@@ -1,0 +1,14 @@
+*,
+*:before,
+*:after {
+  outline: none !important;
+}
+
+*::selection {
+  background: lighten($brand-color, 12%);
+  color: invert($brand-color, 100%);
+}
+
+img {
+  user-select: none;
+}
