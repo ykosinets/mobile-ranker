@@ -1,0 +1,50 @@
+.chart{
+  width: 100%;
+  height: auto;
+  background: transparent;
+  position: absolute;
+  @extend .fs;
+
+  &-wrapper{
+    position: relative;
+    width: 100%;
+
+    &:after{
+      //content: '';
+      //position: absolute;
+      //left: 20px;
+      //bottom: 10px;
+      //right: 0;
+      //height: 50px;
+      //background-image: repeating-radial-gradient(circle, #fff 0px, #fff 5px, transparent 5.0001px, transparent 100%);
+      //background-size: 159.8px 30px;
+      //background-position: -49.6px 0;
+      //background-repeat: repeat-x;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-bottom: 50%;
+    }
+
+    .label{
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: 10%;
+
+      &-x{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+
+      &-y{
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

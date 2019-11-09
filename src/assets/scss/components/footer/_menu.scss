@@ -1,0 +1,18 @@
+.footer-menu{
+  li{
+    margin-bottom: 15px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    a{
+      transition: .17s color ease-in-out;
+      text-decoration: none !important;
+
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}

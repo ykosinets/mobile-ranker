@@ -1,0 +1,89 @@
+.user-dropdown {
+  position: relative;
+
+  @include media-breakpoint-down(sm){
+    display: none;
+  }
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .user-link {
+    color: $header-text-color;
+    padding: 0 15px;
+    cursor: pointer;
+    height: $header-height;
+    @include font-size($header-font-size);
+    white-space: nowrap;
+
+    &:hover {
+      .icon-arrow {
+        &:after {
+          animation: slide-over 2.5s linear infinite;
+        }
+      }
+    }
+
+    img {
+      display: block;
+      box-shadow: $user-shadow;
+      width: $user-size;
+      height: $user-size;
+      border-radius: 100%;
+      margin-right: 18px;
+    }
+
+    .icon-arrow {
+      margin-left: 13px;
+      margin-top: 4px;
+      color: $header-text-color;
+      transform: translate(0, 0) scale(1);
+      will-change: transform;
+      transition: transform .2s ease-in-out;
+
+      &:after {
+        content: "\e909";
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        will-change: transform, opacity;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      .icon-arrow {
+        animation: none;
+        transform: translate(0, 0) scale(-1);
+      }
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+
+    .dropdown-item {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@keyframes slide-over {
+  0% {
+    transform: translate(0, -35px) scale(.2);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0, 0) scale(1.5);
+    opacity: .5;
+  }
+  20%, 100% {
+    transform: translate(0, 35px) scale(.2);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,29 @@
+.copyright{
+  @include font-size(14);
+  font-weight: 600;
+  color: #aea1d9;
+  position: relative;
+  text-align: center;
+  padding: 12px 15px;
+  margin-top: 84px;
+
+  &:before{
+    content: '';
+    height: 0;
+    border-bottom: 2px solid #a99afc;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    right: 150px;
+
+    @include media-breakpoint-down(md){
+      left: 100px;
+      right: 100px;
+    }
+
+    @include media-breakpoint-down(sm){
+      left: 0;
+      right: 0;
+    }
+  }
+}

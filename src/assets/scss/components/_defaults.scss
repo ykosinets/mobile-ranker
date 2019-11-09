@@ -1,0 +1,64 @@
+body{
+  letter-spacing: .5px;
+  color: $content-text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  font-family: $open-sans;
+}
+
+main{
+  flex-grow: 1;
+  position: relative;
+  z-index: 2;
+}
+
+*,
+*:before,
+*:after {
+  outline: none !important;
+}
+
+*::selection {
+  background: $brand-color;
+  color: $white;
+}
+
+img {
+  user-select: none;
+  width: 100%;
+  font-family: $karla;
+}
+
+//custom sizing
+.container{
+  @media screen and (min-width:1600px) {
+    max-width: $container-xl;
+  }
+}
+
+button{
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-control{
+  color: darken($content-text-color, 20%);
+
+  &::placeholder{
+    color: #8f8e8e;
+    opacity: 1;
+    text-indent: 0;
+    transition: .3s opacity ease-in-out, .2s text-indent ease-in-out;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+      text-indent: -25px;
+      transition: .2s opacity ease-in-out, .3s text-indent ease-in-out;
+    }
+  }
+}

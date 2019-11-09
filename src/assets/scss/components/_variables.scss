@@ -1,0 +1,84 @@
+//variables
+$white: #fff;
+$black: #000;
+$karla: 'Karla', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$path-img: '../img';
+$path-fonts: '../fonts';
+
+
+//color
+$primary-color: #2c8df3;
+$brand-color: $primary-color;
+
+//gradient
+$gradient-green: linear-gradient(45deg, #19af44, #9adb37);
+$gradient-orange: linear-gradient(45deg, #ff5a00, #facf24);
+$gradient-red: linear-gradient(45deg, #f43b4e, #f08835);
+$gradient-blue: linear-gradient(45deg, #14b5ff, #158dff);
+$gradient-purple: linear-gradient(45deg, #bb29c8, #3d4bfc);
+$gradient-purple-dark: linear-gradient(45deg, #6337c7, #101667);
+
+//main
+$body-color: #6e6e6e;
+$container-xl: 1440px;
+
+//btn
+$btn-border-radius-lg: 30px;
+$btn-border-radius: 30px;
+$btn-border-radius-sm: 30px;
+$btn-background: linear-gradient(65deg, #6491f1, #0999e8);
+$btn-font-family: $open-sans;
+$btn-line-height: 1;
+$btn-font-size-lg: 15px;
+$btn-font-size: 15px;
+$btn-font-size-sm: 15px;
+$btn-letter-spacing: .5px;
+$btn-box-shadow: 0 9px 18px 0 rgba(#135272, .18);
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+
+//circle
+$circle-size: 100px;
+
+//input
+$input-border-width: 0;
+$input-border-radius: 30px;
+$input-padding-y: .875rem;
+$input-padding-x: 1.625rem;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+
+//notification bell
+$notification-bg-color: #fff;
+$notification-text-color: #F74D4D;
+$notification-box-size: 12;
+$notification-font-size: $notification-box-size / 2;
+
+//header
+$header-height: 77px;
+$header-text-color: $white;
+$header-background: linear-gradient(to right, #4984FC 20%, #039AE5 98%);
+$header-shadow: 0 8px 29px 0 rgba(#2d94e3, .43);
+$header-font-size: 20;
+
+//user
+$user-shadow: 0 8px 27px 0 rgba(#133c98, .61);
+$user-size: 41px;
+
+//dropdown
+$dropdown-box-shadow: 0 8px 27px 0 rgba(19, 60, 152, 0.14);
+$dropdown-border-width: 0;
+$dropdown-link-color: #158dff;
+$dropdown-link-active-bg: $dropdown-link-color;
+$dropdown-link-active-color: $white;
+$dropdown-link-hover-bg: lighten($dropdown-link-color, 40%);
+
+//footer
+$footer-text-color: #f2f2f2;
+$footer-link-color: #e8dcfd;
+
+//content
+$content-text-color: #6e6e6e;
+
+

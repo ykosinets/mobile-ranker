@@ -1,121 +1,104 @@
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CompressionPlugin = require('compression-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const webpack = require("webpack");
-const path = require("path");
-const globSync = require("glob").sync;
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-module.exports = (env, options) => ({
-	entry: ["./src/js/app.js"],
-	devServer: {
-		contentBase: "./dist"
+console.log(path.resolve(__dirname, 'src/assets/scss'));
+
+module.exports = {
+	entry: "./src/assets/js/index.js",
+	output: {
+		path: path.resolve(__dirname, "dist/"),
+		filename: "./assets/js/bundle.js",
+		publicPath: ""
 	},
-	devtool: "source-map",
-	node: {
-		fs: 'empty'
+	devtool: 'source-map',
+	optimization: {
+		minimizer: [new UglifyJsPlugin(), new OptimizeCSSAssetsPlugin()]
 	},
 	module: {
 		rules: [
+			//babel
 			{
-				test: /\.scss$/,
-				use: [
-					options.mode !== "production"
-						? "style-loader"
-						: {
-							loader: MiniCssExtractPlugin.loader,
-							options: {
-								publicPath: "../"
-							}
-						},
-					"css-loader",
-					{
-						loader: 'postcss-loader',
-						options: {
-							plugins: function () {
-								return [
-									require('precss'),
-									require('autoprefixer')
-								];
-							}
-						}
-					},
-					"sass-loader"
-				]
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: "babel-loader",
+				options: {
+					presets: ["@babel/preset-env"]
+				}
 			},
+			//style and css extract
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: [/.css$|.scss$/],
+				use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader", {
+					loader: 'postcss-loader',
+					options: {
+						plugins: () => [require('autoprefixer')],
+					}
+				}]
+			},
+			//image file loader
+			{
+				test: /\.(png|jpg|gif)$/,
 				use: [
 					{
 						loader: "file-loader",
 						options: {
 							name: "[name].[ext]",
-							outputPath: "images/"
+							outputPath: "./assets/img/",
+							publicPath: '../img'
 						}
 					}
 				]
 			},
+			//fonts
 			{
-				test: /\.(html)$/,
-				use: {
-					loader: "html-srcsets-loader",
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [{
+					loader: 'file-loader',
 					options: {
-						attrs: [":src", ':srcset']
+						name: '[name].[ext]',
+						outputPath: './assets/fonts/',
+						publicPath: '../fonts'
 					}
-				}
-			},
-			{
-				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
-				use: {
-					loader: "babel-loader",
-					options: {
-						presets: ["@babel/preset-env"]
-					}
-				}
+				}]
 			}
+		]
+	},
+	resolve: {
+		alias: {
+			'@scss': path.resolve(__dirname, 'src/assets/scss'),
+			'@img': path.resolve(__dirname, 'src/assets/img'),
+			'@': path.resolve(__dirname, 'src')
+		},
+		modules: [
+			'node_modules',
+			path.resolve(__dirname, 'src')
 		]
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "css/[name].[contenthash].css"
+			filename: "./assets/css/styles.css"
 		}),
-		new CleanWebpackPlugin(["dist"]),
-		...globSync("src/**/*.html").map(fileName => {
-			return new HtmlWebpackPlugin({
-				template: fileName,
-				inject: "body",
-				filename: fileName.replace("src/", "")
-			});
+		new HtmlWebpackPlugin({
+			title: "Mobile Ranker",
+			template: "./src/index.html",
+			inject: true,
+			minify: {
+				removeComments: true,
+				collapseWhitespace: true
+			}
 		}),
-		new webpack.ProvidePlugin({
-			$: "jquery",
-			jQuery: "jquery",
-			"window.jQuery": "jquery",
-			Popper: ["popper.js", "default"],
-			Util: "exports-loader?Util!bootstrap/js/dist/util",
-			Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
+		new BrowserSyncPlugin({
+			host: 'localhost',
+			port: 3000,
+			server: { baseDir: ['dist'] }
 		})
 	],
-	optimization: {
-		minimizer: [
-			new UglifyJsPlugin({
-				cache: true,
-				parallel: true,
-				sourceMap: false,
-				extractComments: false
-			}),
-			new CompressionPlugin({
-				test: /\.js$|\.css(\?.*)?$/i
-			}),
-			new OptimizeCSSAssetsPlugin({})
-		]
-	},
-	output: {
-		filename: "[name].js",
-		path: path.resolve(__dirname, "dist"),
-		publicPath: ""
+	performance: {
+		maxEntrypointSize: 1000000,
+		maxAssetSize: 1000000
 	}
-});
+};
