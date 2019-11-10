@@ -35,7 +35,7 @@ import "./components/chart.js";
 
 
 window.notification = new Badge('.notification');
-notification.setNumber(4);
+notification.setNumber(document.querySelectorAll(".notification-dropdown .dropdown-menu > *:not(.dropdown-divider):not(.mark-as-read)").length);
 
 window.nav = new Navigation();
 nav.init();
@@ -43,5 +43,3 @@ nav.init();
 document.querySelector('.mark-as-read').addEventListener('click', ()=>{
 	notification.setNumber(0);
 });
-
-setInterval(function(){notification.increase()}, 10000);

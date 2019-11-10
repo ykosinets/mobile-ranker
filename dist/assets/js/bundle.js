@@ -52244,15 +52244,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.notification = new _components_notification__WEBPACK_IMPORTED_MODULE_29__["default"]('.notification');
-notification.setNumber(4);
+notification.setNumber(document.querySelectorAll(".notification-dropdown .dropdown-menu > *:not(.dropdown-divider):not(.mark-as-read)").length);
 window.nav = new _components_navigation__WEBPACK_IMPORTED_MODULE_30__["default"]();
 nav.init();
 document.querySelector('.mark-as-read').addEventListener('click', function () {
   notification.setNumber(0);
 });
-setInterval(function () {
-  notification.increase();
-}, 10000);
 
 /***/ }),
 
