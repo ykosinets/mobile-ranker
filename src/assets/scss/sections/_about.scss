@@ -1,24 +1,24 @@
-.section-about{
+.section-about {
   padding: 100px 0 84px;
   margin: 0 0 24px 0;
   position: relative;
   overflow: hidden;
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     padding: 50px 0 5px;
   }
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     padding: 20px 0 5px;
   }
 }
 
-.background-shape{
+.background-shape {
   @include media-breakpoint-down(md) {
     margin-bottom: 20px;
   }
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     top: -100px;
@@ -31,21 +31,21 @@
     box-shadow: 0 9px 29px rgba(19, 82, 114, 0.18);
     z-index: -1;
 
-    @media screen and (min-width: #{$container-xl - 1}){
+    @media screen and (min-width: #{$container-xl - 1}) {
       width: calc(50vw + #{$container-xl / 2} - 50% + 20px);
     }
 
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
       width: calc(50vw + #{map-get($container-max-widths, lg) / 2} - 50% + 10px);
     }
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       width: calc(50vw + #{map-get($container-max-widths, md) / 2} - 50% + 10px);
       top: -50px;
       bottom: -5px;
     }
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       width: calc(50vw + #{map-get($container-max-widths, sm) / 2} - 50% + 10px);
       top: -20px;
       bottom: -5px;
@@ -53,22 +53,22 @@
   }
 }
 
-.presentation-image{
+.presentation-image {
   pointer-events: none;
 
-  .device{
+  .device {
     position: relative;
     z-index: 3;
   }
 
-  .shadow{
+  .shadow {
     position: absolute;
     left: 50%;
     box-shadow: none !important;
     transform: translate(-50%, 0);
   }
 
-  .screen{
+  .screen {
     position: absolute;
     z-index: 2;
     background: #f00;
@@ -79,7 +79,7 @@
       width: 100%;
     }
 
-    img{
+    img {
       position: absolute;
       object-fit: cover;
       object-position: center;
@@ -88,17 +88,17 @@
     }
   }
 
-  .imac{
+  .imac {
     position: relative;
     margin: 0 37px 0 0;
 
-    .shadow{
+    .shadow {
       //width: 498px; //height: 29px;
       width: 104%;
       bottom: -4%;
     }
 
-    .screen{
+    .screen {
       left: 4%;
       right: 4%;
       bottom: auto;
@@ -109,13 +109,13 @@
       }
     }
 
-    .device{
+    .device {
       //width: 479px; //height:401px;
       max-width: 100%;
     }
   }
 
-  .iphone{
+  .iphone {
     max-width: 26%;
     width: 100%;
     z-index: 22;
@@ -125,12 +125,12 @@
     position: absolute;
     left: auto;
 
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(lg) {
       bottom: auto;
       top: 50px;
     }
 
-    @include media-breakpoint-up(xl){
+    @include media-breakpoint-up(xl) {
       top: 70px;
     }
 
@@ -138,13 +138,13 @@
       top: 100px;
     }
 
-    .shadow{
+    .shadow {
       //width: 144px; //height: 19px;
       bottom: -7px;
       width: 110%;
     }
 
-    .screen{
+    .screen {
       top: 2.8%;
       left: 5.8%;
       right: 5.8%;
@@ -154,9 +154,9 @@
       }
     }
 
-    .device{
+    .device {
+      //width: 131px; //height: 264px;
       margin: 0 auto;
-      //max-width: 131px; //height: 264px;
     }
   }
 }

@@ -4,19 +4,18 @@
 @import "user";
 @import "notification";
 
-
-.header{
+.header {
   background: $header-background;
   color: $header-text-color;
   box-shadow: $header-shadow;
   z-index: $zindex-dropdown;
   position: relative;
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     height: 50px;
   }
 
-  a{
+  a {
     color: $header-text-color;
   }
 }

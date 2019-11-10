@@ -32,7 +32,7 @@
         display: none;
       }
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         width: calc(100vw - 30px);
       }
 
@@ -73,7 +73,7 @@
         }
 
         &:active,
-        &:hover:active{
+        &:hover:active {
           background: $dropdown-link-color;
           color: $white;
         }
@@ -98,7 +98,7 @@
     user-select: none;
     @include clickable-area();
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       width: 50px;
       height: 50px;
     }

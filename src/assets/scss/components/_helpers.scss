@@ -12,8 +12,8 @@
 }
 
 
-@mixin clickable-area($w: 50px, $h: 50px){
-  &:after{
+@mixin clickable-area($w: 50px, $h: 50px) {
+  &:after {
     content: '';
     position: absolute;
     width: 50px;

@@ -10,12 +10,12 @@
   font-weight: 600;
 
   &:hover,
-  &:focus{
+  &:focus {
     box-shadow: 0 7px 14px 0 rgba(#135272, .3);
   }
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
   min-width: 180px;
   padding: 14px 12px;
   @include font-size(15);
@@ -25,7 +25,7 @@
   border-color: #0999e8;
 
   &:hover,
-  &:focus{
+  &:focus {
     background: #0999e8;
     color: $white;
   }
@@ -71,7 +71,7 @@
     mix-blend-mode: screen;
   }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     min-width: 180px;
   }
 }
@@ -91,7 +91,7 @@
   font-weight: 700;
   @include font-size(36);
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     width: 70px;
     height: 70px;
     @include font-size(28);
@@ -134,7 +134,7 @@
       mix-blend-mode: screen;
     }
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       width: 65px;
       height: 65px;
     }
@@ -162,7 +162,7 @@
     @extend h4;
     line-height: 0.8;
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       @include font-size(14, true);
     }
   }

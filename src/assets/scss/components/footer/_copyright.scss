@@ -1,4 +1,4 @@
-.copyright{
+.copyright {
   @include font-size(14);
   font-weight: 600;
   color: #aea1d9;
@@ -7,7 +7,7 @@
   padding: 12px 15px;
   margin-top: 84px;
 
-  &:before{
+  &:before {
     content: '';
     height: 0;
     border-bottom: 2px solid #a99afc;
@@ -16,12 +16,12 @@
     left: 150px;
     right: 150px;
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       left: 100px;
       right: 100px;
     }
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       left: 0;
       right: 0;
     }

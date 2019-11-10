@@ -6400,8 +6400,7 @@ main {
 
 img {
   user-select: none;
-  width: 100%;
-  font-family: "Karla", sans-serif; }
+  width: 100%; }
 
 @media screen and (min-width: 1600px) {
   .container {
@@ -6822,7 +6821,7 @@ h4, .circle-label, .tile-title {
       transition: .2s box-shadow ease-in-out, .3s transform .7s ease-in-out, .3s opacity .7s ease-in-out; }
     .header-toggle span:nth-child(3) {
       margin-top: 6px;
-      transition: .2s box-shadow  ease-in-out, .3s transform .8s ease-in-out, .3s opacity .8s ease-in-out; }
+      transition: .2s box-shadow ease-in-out, .3s transform .8s ease-in-out, .3s opacity .8s ease-in-out; }
   .header-toggle.active span {
     box-shadow: 0 0 0 0 rgba(110, 110, 110, 0);
     transform: translate(-150%, -50%); }
@@ -6833,7 +6832,7 @@ h4, .circle-label, .tile-title {
       transition: .2s box-shadow ease-in-out, .3s transform .1s ease-in-out, .3s opacity .1s ease-in-out;
       opacity: 0; }
     .header-toggle.active span:nth-child(3) {
-      transition: .2s box-shadow  ease-in-out, .3s transform .2s ease-in-out, .3s opacity .2s ease-in-out;
+      transition: .2s box-shadow ease-in-out, .3s transform .2s ease-in-out, .3s opacity .2s ease-in-out;
       opacity: 0; }
 
 .brand-logo {
@@ -6853,7 +6852,6 @@ h4, .circle-label, .tile-title {
     max-width: 120px;
     width: 100%;
     height: auto;
-    font-family: "Karla", sans-serif;
     letter-spacing: 1.5px; }
 
 .user-dropdown {

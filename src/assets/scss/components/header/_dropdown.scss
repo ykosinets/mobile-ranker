@@ -16,7 +16,7 @@
       pointer-events: auto;
     }
 
-    & > a{
+    & > a {
       color: $body-color;
       text-decoration: none !important;
       display: block;
@@ -24,7 +24,7 @@
       transition: background .2s ease-in-out;
 
       &:hover,
-      &:focus{
+      &:focus {
         background: lighten($dropdown-link-color, 42%);
       }
 
@@ -57,17 +57,17 @@
       }
     }
 
-    p{
+    p {
       padding: 0.5rem 1.5rem;
       @include font-size(15);
       line-height: 1.3;
 
-      a{
+      a {
         color: $dropdown-link-color;
         text-decoration: none !important;
         position: relative;
 
-        &:after{
+        &:after {
           content: '';
           position: absolute;
           left: 1px;
@@ -81,7 +81,7 @@
         }
 
         &:hover,
-        &:focus{
+        &:focus {
           &:after {
             transform: scaleX(1);
           }

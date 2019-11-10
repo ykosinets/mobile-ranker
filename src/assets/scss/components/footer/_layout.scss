@@ -3,14 +3,14 @@
 @import "form";
 @import "copyright";
 
-.footer-row{
+.footer-row {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
   margin: 0 -15px;
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     flex-wrap: wrap;
   }
 
@@ -19,43 +19,43 @@
     width: 100%;
   }
 
-  .footer{
-    &-content{
+  .footer {
+    &-content {
       max-width: 360px;
       flex-grow: 1;
       margin-left: 0;
       margin-right: auto;
 
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         max-width: 100%;
         text-align: center;
       }
     }
 
-    &-menu{
+    &-menu {
       max-width: 150px;
       margin-right: 46px;
       margin-left: 0;
 
-      @include media-breakpoint-down(lg){
+      @include media-breakpoint-down(lg) {
         margin-right: 15px;
       }
 
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         max-width: 50%;
         text-align: center;
         margin: 15px 0 0;
       }
 
-      @include media-breakpoint-down(sm){
+      @include media-breakpoint-down(sm) {
         max-width: 100%;
       }
     }
 
-    &-form{
+    &-form {
       max-width: 400px;
 
-      @include media-breakpoint-down(md){
+      @include media-breakpoint-down(md) {
         max-width: 100%;
         margin: 20px 0 0;
       }
@@ -82,7 +82,7 @@
     color: $footer-text-color;
   }
 
-  a{
+  a {
     @include font-size(17);
     font-weight: 600;
     color: $footer-link-color;

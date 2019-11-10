@@ -1,7 +1,7 @@
 .user-dropdown {
   position: relative;
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     display: none;
   }
 

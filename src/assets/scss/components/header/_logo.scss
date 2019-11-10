@@ -1,7 +1,7 @@
-.brand-logo{
+.brand-logo {
   padding: 0 15px;
 
-  @include media-breakpoint-down(sm){
+  @include media-breakpoint-down(sm) {
     width: 100%;
     text-align: center;
     display: flex;
@@ -12,12 +12,11 @@
     padding: 8px 55px;
   }
 
-  img{
+  img {
     @include font-size($header-font-size);
     max-width: 120px;
     width: 100%;
     height: auto;
-    font-family: $karla;
     letter-spacing: 1.5px;
   }
 }

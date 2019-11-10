@@ -1,32 +1,32 @@
-.footer-form{
+.footer-form {
 
-  &-title{
+  &-title {
     margin: 0 0 23px 0;
     padding-left: 8px;
     @include font-size(17);
     font-weight: 600;
   }
 
-  .form-group{
+  .form-group {
     *::selection {
       background: lighten(#6337c7, 10%);
       color: $white;
     }
 
-    .form-control{
+    .form-control {
       margin-bottom: 22px;
       box-shadow: 0 9px 21px 0 rgba(#100b57, .25);
 
-      &:invalid{
-        box-shadow: 0 9px 21px 0 rgba(#100b57, .25), 0 5px 15px 0 rgba(255,0,0,.3);
+      &:invalid {
+        box-shadow: 0 9px 21px 0 rgba(#100b57, .25), 0 5px 15px 0 rgba(255, 0, 0, .3);
       }
 
-      &:valid{
+      &:valid {
         box-shadow: 0 9px 21px 0 rgba(#100b57, .25);
       }
     }
 
-    .btn-secondary{
+    .btn-secondary {
       float: right;
       min-width: 152px;
       min-height: 35px;

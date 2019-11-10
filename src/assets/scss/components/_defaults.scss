@@ -1,4 +1,4 @@
-body{
+body {
   letter-spacing: .5px;
   color: $content-text-color;
   display: flex;
@@ -10,7 +10,7 @@ body{
   overscroll-behavior: none;
 }
 
-main{
+main {
   flex-grow: 1;
   position: relative;
   z-index: 2;
@@ -30,25 +30,24 @@ main{
 img {
   user-select: none;
   width: 100%;
-  font-family: $karla;
 }
 
 //custom sizing
-.container{
-  @media screen and (min-width:1600px) {
+.container {
+  @media screen and (min-width: 1600px) {
     max-width: $container-xl;
   }
 }
 
-button{
+button {
   box-shadow: none;
   border-radius: 0;
 }
 
-.form-control{
+.form-control {
   color: darken($content-text-color, 20%);
 
-  &::placeholder{
+  &::placeholder {
     color: #8f8e8e;
     opacity: 1;
     text-indent: 0;

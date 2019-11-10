@@ -1,13 +1,13 @@
-.footer-logo{
+.footer-logo {
   margin-bottom: 15px;
 
-  img{
+  img {
     max-width: 150px;
     display: block;
     font-weight: 700;
     @include font-size(20);
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
       margin: 0 auto 15px;
     }
   }

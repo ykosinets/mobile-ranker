@@ -151,7 +151,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
       &:first-of-type {
         padding-top: 7px;
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
           margin-top: 60px;
         }
       }
@@ -338,14 +338,14 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
       }
     }
 
-    .dropdown-item{
+    .dropdown-item {
       padding: .5rem 1.5rem .5rem 40px;
 
-      &:first-child{
+      &:first-child {
         margin-top: 15px;
       }
 
-      &:last-child{
+      &:last-child {
         margin-bottom: 15px;
       }
     }
