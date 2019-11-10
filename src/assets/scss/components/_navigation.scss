@@ -194,11 +194,16 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-blue;
         }
 
-        ul li.active > a,
+        ul li.active,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-blue;
           }
+        }
+
+        *::selection {
+          background: darken(#158dff, 20%);
+          color: $white;
         }
       }
 
@@ -213,11 +218,16 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-green;
         }
 
-        ul li.active > a,
+        ul li.active,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-green;
           }
+        }
+
+        *::selection {
+          background: #197728;
+          color: $white;
         }
       }
 
@@ -232,11 +242,16 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-red;
         }
 
-        ul li.active > a,
+        ul li.active,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-red;
           }
+        }
+
+        *::selection {
+          background: #c21338;
+          color: $white;
         }
       }
 
