@@ -1,5 +1,5 @@
 .section-about{
-  padding: 100px 0;
+  padding: 100px 0 84px;
   margin: 0 0 24px 0;
   position: relative;
   overflow: hidden;
@@ -32,7 +32,7 @@
     z-index: -1;
 
     @media screen and (min-width: #{$container-xl - 1}){
-      width: calc(50vw + #{$container-xl / 2} - 50% + 10px);
+      width: calc(50vw + #{$container-xl / 2} - 50% + 20px);
     }
 
     @include media-breakpoint-down(lg){
@@ -49,6 +49,114 @@
       width: calc(50vw + #{map-get($container-max-widths, sm) / 2} - 50% + 10px);
       top: -20px;
       bottom: -5px;
+    }
+  }
+}
+
+.presentation-image{
+  pointer-events: none;
+
+  .device{
+    position: relative;
+    z-index: 3;
+  }
+
+  .shadow{
+    position: absolute;
+    left: 50%;
+    box-shadow: none !important;
+    transform: translate(-50%, 0);
+  }
+
+  .screen{
+    position: absolute;
+    z-index: 2;
+    background: #f00;
+
+    &:after {
+      content: '';
+      position: relative;
+      width: 100%;
+    }
+
+    img{
+      position: absolute;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .imac{
+    position: relative;
+    margin: 0 37px 0 0;
+
+    .shadow{
+      //width: 498px; //height: 29px;
+      width: 104%;
+      bottom: -4%;
+    }
+
+    .screen{
+      left: 4%;
+      right: 4%;
+      bottom: auto;
+      top: 5%;
+
+      &:after {
+        padding-bottom: 55.8895%;
+      }
+    }
+
+    .device{
+      //width: 479px; //height:401px;
+      max-width: 100%;
+    }
+  }
+
+  .iphone{
+    max-width: 26%;
+    width: 100%;
+    z-index: 22;
+    top: auto;
+    bottom: -10px;
+    right: 0;
+    position: absolute;
+    left: auto;
+
+    @include media-breakpoint-up(lg){
+      bottom: auto;
+      top: 50px;
+    }
+
+    @include media-breakpoint-up(xl){
+      top: 70px;
+    }
+
+    @media screen and (min-width: 1599px) {
+      top: 100px;
+    }
+
+    .shadow{
+      //width: 144px; //height: 19px;
+      bottom: -7px;
+      width: 110%;
+    }
+
+    .screen{
+      top: 2.8%;
+      left: 5.8%;
+      right: 5.8%;
+
+      &:after {
+        padding-bottom: 213.986%;
+      }
+    }
+
+    .device{
+      margin: 0 auto;
+      //max-width: 131px; //height: 264px;
     }
   }
 }

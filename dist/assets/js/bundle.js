@@ -51623,6 +51623,237 @@ module.exports = "../fonts/circles-line_2.svg";
 
 /***/ }),
 
+/***/ "./src/assets/img/example-responsive.jpg":
+/*!***********************************************!*\
+  !*** ./src/assets/img/example-responsive.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/example-responsive.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/img/example.jpg":
+/*!************************************!*\
+  !*** ./src/assets/img/example.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/example.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/android-chrome-192x192.png":
+/*!***********************************************************!*\
+  !*** ./src/assets/img/favicon/android-chrome-192x192.png ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/android-chrome-192x192.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/android-chrome-512x512.png":
+/*!***********************************************************!*\
+  !*** ./src/assets/img/favicon/android-chrome-512x512.png ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/android-chrome-512x512.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/apple-touch-icon.png":
+/*!*****************************************************!*\
+  !*** ./src/assets/img/favicon/apple-touch-icon.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/apple-touch-icon.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/browserconfig.xml":
+/*!**************************************************!*\
+  !*** ./src/assets/img/favicon/browserconfig.xml ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/browserconfig.xml";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/favicon-16x16.png":
+/*!**************************************************!*\
+  !*** ./src/assets/img/favicon/favicon-16x16.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/favicon-16x16.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/favicon-32x32.png":
+/*!**************************************************!*\
+  !*** ./src/assets/img/favicon/favicon-32x32.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/favicon-32x32.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/favicon.ico":
+/*!********************************************!*\
+  !*** ./src/assets/img/favicon/favicon.ico ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/favicon.ico";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/mstile-144x144.png":
+/*!***************************************************!*\
+  !*** ./src/assets/img/favicon/mstile-144x144.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/mstile-144x144.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/mstile-150x150.png":
+/*!***************************************************!*\
+  !*** ./src/assets/img/favicon/mstile-150x150.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/mstile-150x150.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/mstile-310x150.png":
+/*!***************************************************!*\
+  !*** ./src/assets/img/favicon/mstile-310x150.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/mstile-310x150.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/mstile-310x310.png":
+/*!***************************************************!*\
+  !*** ./src/assets/img/favicon/mstile-310x310.png ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/mstile-310x310.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/mstile-70x70.png":
+/*!*************************************************!*\
+  !*** ./src/assets/img/favicon/mstile-70x70.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/mstile-70x70.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/safari-pinned-tab.svg":
+/*!******************************************************!*\
+  !*** ./src/assets/img/favicon/safari-pinned-tab.svg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../fonts/safari-pinned-tab.svg";
+
+/***/ }),
+
+/***/ "./src/assets/img/favicon/site.webmanifest":
+/*!*************************************************!*\
+  !*** ./src/assets/img/favicon/site.webmanifest ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/site.webmanifest";
+
+/***/ }),
+
+/***/ "./src/assets/img/imac-shadow.png":
+/*!****************************************!*\
+  !*** ./src/assets/img/imac-shadow.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/imac-shadow.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/imac.png":
+/*!*********************************!*\
+  !*** ./src/assets/img/imac.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/imac.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/iphone-shadow.png":
+/*!******************************************!*\
+  !*** ./src/assets/img/iphone-shadow.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/iphone-shadow.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/iphone.png":
+/*!***********************************!*\
+  !*** ./src/assets/img/iphone.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/iphone.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/logo.png":
+/*!*********************************!*\
+  !*** ./src/assets/img/logo.png ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/logo.png";
+
+/***/ }),
+
 /***/ "./src/assets/img/mac-iphone.png":
 /*!***************************************!*\
   !*** ./src/assets/img/mac-iphone.png ***!
@@ -51631,6 +51862,28 @@ module.exports = "../fonts/circles-line_2.svg";
 /***/ (function(module, exports) {
 
 module.exports = "../img/mac-iphone.png";
+
+/***/ }),
+
+/***/ "./src/assets/img/placeholder-responsive.jpg":
+/*!***************************************************!*\
+  !*** ./src/assets/img/placeholder-responsive.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/placeholder-responsive.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/img/placeholder.jpg":
+/*!****************************************!*\
+  !*** ./src/assets/img/placeholder.jpg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "../img/placeholder.jpg";
 
 /***/ }),
 
@@ -51664,7 +51917,6 @@ gradientStroke.addColorStop(0, '#fff');
 gradientStroke.addColorStop(1, 'rgba(255,255,255,0)');
 var height = document.querySelector('#chart').getBoundingClientRect().height - 50;
 var min = Math.min.apply(Math, ticks);
-console.log(height);
 var gradientFill = ctx.createLinearGradient(0, min, 0, height);
 gradientFill.addColorStop(0, "rgba(255, 255, 255, 0.3)");
 gradientFill.addColorStop(1, "rgba(255, 255, 255, 0)");
@@ -51717,11 +51969,11 @@ window.chart = new Chart(ctx, {
           fontFamily: "Open Sans",
           fontSize: 15,
           beginAtZero: true,
-          maxTicksLimit: 4,
+          maxTicksLimit: 6,
           padding: 20,
           autoSkip: false,
-          min: ticks[ticks.length - 1],
-          max: ticks[0],
+          min: Math.min.apply(Math, ticks),
+          max: Math.max.apply(Math, ticks),
           callback: function callback(value, index, values) {
             return values.length - 1 === index ? '' : value;
           }
@@ -51743,7 +51995,7 @@ window.chart = new Chart(ctx, {
       xAxes: [{
         gridLines: {
           zeroLineColor: "transparent",
-          color: "rgba(255,255,255,.2)",
+          color: "rgba(255,255,255,.05)",
           drawTicks: true,
           drawBorder: false
         },
@@ -51898,21 +52150,67 @@ function Badge(selector) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ "./src/assets/scss/style.scss");
-/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/user-avatar.jpg */ "./src/assets/img/user-avatar.jpg");
-/* harmony import */ var _img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/mac-iphone.png */ "./src/assets/img/mac-iphone.png");
-/* harmony import */ var _img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/circles-line_1.svg */ "./src/assets/img/circles-line_1.svg");
-/* harmony import */ var _img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/circles-line_2.svg */ "./src/assets/img/circles-line_2.svg");
-/* harmony import */ var _img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_notification__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/notification */ "./src/assets/js/components/notification.js");
-/* harmony import */ var _components_navigation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/navigation */ "./src/assets/js/components/navigation.js");
-/* harmony import */ var _components_chart_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/chart.js */ "./src/assets/js/components/chart.js");
+/* harmony import */ var _img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../img/user-avatar.jpg */ "./src/assets/img/user-avatar.jpg");
+/* harmony import */ var _img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_img_user_avatar_jpg__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/mac-iphone.png */ "./src/assets/img/mac-iphone.png");
+/* harmony import */ var _img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_img_mac_iphone_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/circles-line_1.svg */ "./src/assets/img/circles-line_1.svg");
+/* harmony import */ var _img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_circles_line_1_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/circles-line_2.svg */ "./src/assets/img/circles-line_2.svg");
+/* harmony import */ var _img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_circles_line_2_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/logo.png */ "./src/assets/img/logo.png");
+/* harmony import */ var _img_logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _img_iphone_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/iphone.png */ "./src/assets/img/iphone.png");
+/* harmony import */ var _img_iphone_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_iphone_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_iphone_shadow_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/iphone-shadow.png */ "./src/assets/img/iphone-shadow.png");
+/* harmony import */ var _img_iphone_shadow_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_iphone_shadow_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _img_imac_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/imac.png */ "./src/assets/img/imac.png");
+/* harmony import */ var _img_imac_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_imac_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _img_imac_shadow_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/imac-shadow.png */ "./src/assets/img/imac-shadow.png");
+/* harmony import */ var _img_imac_shadow_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_img_imac_shadow_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _img_placeholder_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../img/placeholder.jpg */ "./src/assets/img/placeholder.jpg");
+/* harmony import */ var _img_placeholder_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_img_placeholder_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _img_placeholder_responsive_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../img/placeholder-responsive.jpg */ "./src/assets/img/placeholder-responsive.jpg");
+/* harmony import */ var _img_placeholder_responsive_jpg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_img_placeholder_responsive_jpg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _img_example_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../img/example.jpg */ "./src/assets/img/example.jpg");
+/* harmony import */ var _img_example_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_img_example_jpg__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _img_example_responsive_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../img/example-responsive.jpg */ "./src/assets/img/example-responsive.jpg");
+/* harmony import */ var _img_example_responsive_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_img_example_responsive_jpg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _img_favicon_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../img/favicon/android-chrome-192x192.png */ "./src/assets/img/favicon/android-chrome-192x192.png");
+/* harmony import */ var _img_favicon_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_android_chrome_192x192_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _img_favicon_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../img/favicon/android-chrome-512x512.png */ "./src/assets/img/favicon/android-chrome-512x512.png");
+/* harmony import */ var _img_favicon_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_android_chrome_512x512_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _img_favicon_apple_touch_icon_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../img/favicon/apple-touch-icon.png */ "./src/assets/img/favicon/apple-touch-icon.png");
+/* harmony import */ var _img_favicon_apple_touch_icon_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_apple_touch_icon_png__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _img_favicon_browserconfig_xml__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../img/favicon/browserconfig.xml */ "./src/assets/img/favicon/browserconfig.xml");
+/* harmony import */ var _img_favicon_browserconfig_xml__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_browserconfig_xml__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _img_favicon_favicon_ico__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../img/favicon/favicon.ico */ "./src/assets/img/favicon/favicon.ico");
+/* harmony import */ var _img_favicon_favicon_ico__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_favicon_ico__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _img_favicon_favicon_16x16_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../img/favicon/favicon-16x16.png */ "./src/assets/img/favicon/favicon-16x16.png");
+/* harmony import */ var _img_favicon_favicon_16x16_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_favicon_16x16_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _img_favicon_favicon_32x32_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../img/favicon/favicon-32x32.png */ "./src/assets/img/favicon/favicon-32x32.png");
+/* harmony import */ var _img_favicon_favicon_32x32_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_favicon_32x32_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _img_favicon_mstile_70x70_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../img/favicon/mstile-70x70.png */ "./src/assets/img/favicon/mstile-70x70.png");
+/* harmony import */ var _img_favicon_mstile_70x70_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_mstile_70x70_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _img_favicon_mstile_144x144_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../img/favicon/mstile-144x144.png */ "./src/assets/img/favicon/mstile-144x144.png");
+/* harmony import */ var _img_favicon_mstile_144x144_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_mstile_144x144_png__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _img_favicon_mstile_150x150_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../img/favicon/mstile-150x150.png */ "./src/assets/img/favicon/mstile-150x150.png");
+/* harmony import */ var _img_favicon_mstile_150x150_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_mstile_150x150_png__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _img_favicon_mstile_310x150_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../img/favicon/mstile-310x150.png */ "./src/assets/img/favicon/mstile-310x150.png");
+/* harmony import */ var _img_favicon_mstile_310x150_png__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_mstile_310x150_png__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _img_favicon_mstile_310x310_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../img/favicon/mstile-310x310.png */ "./src/assets/img/favicon/mstile-310x310.png");
+/* harmony import */ var _img_favicon_mstile_310x310_png__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_mstile_310x310_png__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _img_favicon_safari_pinned_tab_svg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../img/favicon/safari-pinned-tab.svg */ "./src/assets/img/favicon/safari-pinned-tab.svg");
+/* harmony import */ var _img_favicon_safari_pinned_tab_svg__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_safari_pinned_tab_svg__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _img_favicon_site_webmanifest__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../img/favicon/site.webmanifest */ "./src/assets/img/favicon/site.webmanifest");
+/* harmony import */ var _img_favicon_site_webmanifest__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_img_favicon_site_webmanifest__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../scss/style.scss */ "./src/assets/scss/style.scss");
+/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _components_notification__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/notification */ "./src/assets/js/components/notification.js");
+/* harmony import */ var _components_navigation__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/navigation */ "./src/assets/js/components/navigation.js");
+/* harmony import */ var _components_chart_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/chart.js */ "./src/assets/js/components/chart.js");
 
 
 
@@ -51922,13 +52220,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-window.notification = new _components_notification__WEBPACK_IMPORTED_MODULE_6__["default"]('.notification');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.notification = new _components_notification__WEBPACK_IMPORTED_MODULE_29__["default"]('.notification');
 notification.setNumber(4);
-window.nav = new _components_navigation__WEBPACK_IMPORTED_MODULE_7__["default"]();
+window.nav = new _components_navigation__WEBPACK_IMPORTED_MODULE_30__["default"]();
 nav.init();
 document.querySelector('.mark-as-read').addEventListener('click', function () {
   notification.setNumber(0);
 });
+setInterval(function () {
+  notification.increase();
+}, 10000);
 
 /***/ }),
 

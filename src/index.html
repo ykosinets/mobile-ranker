@@ -8,14 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <!--  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#7fb283">-->
-  <meta name="apple-mobile-web-app-title" content="Mobile Ranker">
-  <meta name="application-name" content="Mobile Ranker">
-  <meta name="msapplication-TileColor" content="#533939">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
   <!-- fonts -->
@@ -36,8 +34,8 @@
         </div>
 
         <div class="brand-logo">
-          <a href="/">
-            <img src="" alt="Logo Here">
+          <a href="#">
+            <img src="./assets/img/logo.png" alt="Logo Here">
           </a>
         </div>
       </div>
@@ -120,7 +118,18 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12 col-sm-12 offset-sm-0 col-10 offset-1 background-shape">
-          <img src="assets/img/mac-iphone.png" alt="image">
+          <div class="presentation-image">
+            <div class="imac">
+              <div class="device"><img src="./assets/img/imac.png" alt="imac"></div>
+              <div class="screen"><img src="./assets/img/example.jpg" alt="app-screen"></div>
+              <div class="shadow"><img src="./assets/img/imac-shadow.png" alt="imac-shadow"></div>
+            </div>
+            <div class="iphone">
+              <div class="device"><img src="./assets/img/iphone.png" alt="iphone"></div>
+              <div class="screen"><img src="./assets/img/example-responsive.jpg" alt="app-screen-mobile"></div>
+              <div class="shadow"><img src="./assets/img/iphone-shadow.png" alt="iphone-shadow"></div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-8 col-md-12">
@@ -132,11 +141,6 @@
 
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the
-                1500s, when an unknown printer took a galley of type and scrambled it to
-                make a type specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially unchanged.
-                It was popularised.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the
                 1500s, when an unknown printer took a galley of type and scrambled it to
                 make a type specimen book. It has survived not only five centuries, but also
@@ -207,9 +211,9 @@
             </p>
 
             <div class="chart-wrapper">
-              <div class="label"></div>
-              <div class="label-x"></div>
-              <div class="label-y"></div>
+              <div class="label">Profit</div>
+              <div class="label-x">Years</div>
+              <div class="label-y">Dollars</div>
               <canvas id="chart" class="chart"></canvas>
             </div>
           </div>
@@ -578,8 +582,8 @@
   <div class="container">
     <div class="footer-row">
       <div class="footer-content">
-        <a class="footer-logo" href="/">
-          <img src="" alt="Logo Here">
+        <a class="footer-logo" href="#">
+          <img src="./assets/img/logo.png" alt="Logo Here">
         </a>
 
         <p>
@@ -593,7 +597,7 @@
 
       <div class="footer-menu">
         <ul class="list-unstyled">
-          <li><a href="/">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Lorem Ipsum</a></li>
@@ -615,7 +619,7 @@
 
           <div class="form-group">
             <input type="email" class="form-control" placeholder="Enter your email" name="email"
-                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
             <button class="btn btn-sm btn-secondary" type="submit">Subscribe</button>
           </div>

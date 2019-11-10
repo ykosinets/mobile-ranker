@@ -7,6 +7,7 @@ body{
   justify-content: space-between;
   width: 100%;
   font-family: $open-sans;
+  overscroll-behavior: none;
 }
 
 main{

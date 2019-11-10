@@ -8,6 +8,11 @@
   &-wrapper{
     position: relative;
     width: 100%;
+    padding: 0;
+
+    canvas{
+      display: block;
+    }
 
     &:after{
       //content: '';
@@ -31,19 +36,35 @@
     .label{
       position: absolute;
       left: 50%;
-      top: 0;
-      margin-left: 10%;
+      top: -10px;
+      margin-left: -5%;
+
+      @include media-breakpoint-down(sm){
+        @include font-size(14);
+      }
 
       &-x{
         position: absolute;
-        left: 0;
-        bottom: 0;
+        left: -15px;
+        bottom: 6px;
+
+        @include media-breakpoint-down(sm){
+          @include font-size(13);
+          left: -7px;
+          bottom: 9px;
+        }
       }
 
       &-y{
         position: absolute;
-        left: 0;
-        top: 0;
+        left: -15px;
+        top: -15px;
+
+        @include media-breakpoint-down(sm){
+          @include font-size(13);
+          left: -7px;
+          top: -18px;
+        }
       }
     }
   }

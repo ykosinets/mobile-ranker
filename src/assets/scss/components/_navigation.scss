@@ -17,6 +17,9 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
   overflow-y: auto;
   padding: 10px 0;
   scrollbar-width: none;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   transform: translate(-100%, 0);
   transition: .5s transform .2s cubic-bezier(.8, 0, .4, 1);
@@ -98,7 +101,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
 
     @include media-breakpoint-down(sm) {
       right: 0;
-      position: sticky;
+      position: relative;
       width: 50px;
       height: 50px;
       left: auto;
@@ -147,6 +150,10 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
 
       &:first-of-type {
         padding-top: 7px;
+
+        @include media-breakpoint-down(sm){
+          margin-top: 60px;
+        }
       }
 
       &:after {
@@ -178,6 +185,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
 
       &-blue {
         ul li:hover > a,
+        ul li.active > a,
         .nav-menu-heading {
           color: #4984fc;
         }
@@ -186,6 +194,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-blue;
         }
 
+        ul li.active > a,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-blue;
@@ -195,6 +204,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
 
       &-green {
         ul li:hover > a,
+        ul li.active > a,
         .nav-menu-heading {
           color: #26b342;
         }
@@ -203,6 +213,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-green;
         }
 
+        ul li.active > a,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-green;
@@ -212,6 +223,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
 
       &-red {
         ul li:hover > a,
+        ul li.active > a,
         .nav-menu-heading {
           color: #f4424c;
         }
@@ -220,6 +232,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           background: $gradient-navigation-red;
         }
 
+        ul li.active > a,
         ul li:hover {
           & > a:after {
             background: $gradient-navigation-red;
@@ -235,6 +248,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
           li {
             display: block;
 
+            &.active,
             &:hover {
               & > a {
                 &:before {
@@ -299,6 +313,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
   .user-dropdown {
     background: $header-background;
     margin-top: -50px;
+    margin-bottom: 20px;
     position: relative;
     width: 100%;
     left: 0;
@@ -324,7 +339,7 @@ $gradient-navigation-green: linear-gradient(53deg, #26b342, #81d239);
     }
 
     .dropdown-item{
-      padding-left: 40px;
+      padding: .5rem 1.5rem .5rem 40px;
 
       &:first-child{
         margin-top: 15px;
