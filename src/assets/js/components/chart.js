@@ -9,6 +9,9 @@ gradientStroke.addColorStop(1, 'rgba(255,255,255,0)');
 let height = document.querySelector('#chart').getBoundingClientRect().height - 50;
 let min = Math.min( ...ticks );
 
+let fontSize = window.outerWidth * 15 /1600;
+fontSize = fontSize < 10 ? 10 : fontSize;
+
 const gradientFill = ctx.createLinearGradient(0, min, 0, height);
 gradientFill.addColorStop(0, "rgba(255, 255, 255, 0.3)");
 gradientFill.addColorStop(1, "rgba(255, 255, 255, 0)");
@@ -60,7 +63,7 @@ window.chart = new Chart(ctx, {
 					fontColor: "rgba(255,255,255,1)",
 					fontStyle: "normal",
 					fontFamily: "Open Sans",
-					fontSize: 15,
+					fontSize: fontSize,
 					beginAtZero: true,
 					maxTicksLimit: 6,
 					padding: 20,
@@ -97,7 +100,7 @@ window.chart = new Chart(ctx, {
 					fontColor: "rgba(255,255,255,1)",
 					fontFamily: "Open Sans",
 					fontStyle: "normal",
-					fontSize: 15,
+					fontSize: fontSize,
 					beginAtZero: true,
 					callback: function(value, index, values) {
 						return '' + value;
