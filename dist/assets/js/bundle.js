@@ -51915,12 +51915,9 @@ var ctx = document.getElementById('chart').getContext("2d");
 var gradientStroke = ctx.createLinearGradient(0, 0, 0, 500);
 gradientStroke.addColorStop(0, '#fff');
 gradientStroke.addColorStop(1, 'rgba(255,255,255,0)');
-var min = Math.min.apply(Math, ticks);
 var w = window.outerWidth;
-var factor = .69 + 0.09 / 1280 * w; // console.log(factor);
-
-var height = document.querySelector('#chart').getBoundingClientRect().height * factor; // height = window.outerWidth < 768 ? min :  height;
-
+var factor = .69 + 0.09 / 1280 * w;
+var height = document.querySelector('#chart').getBoundingClientRect().height * factor;
 var fontSize = window.outerWidth * 15 / 1600;
 fontSize = fontSize < 12 ? 12 : fontSize;
 var gradientFill = ctx.createLinearGradient(0, 0, 0, height);
@@ -51939,13 +51936,12 @@ window.chart = new Chart(ctx, {
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "#fff",
       pointBorderWidth: 0,
-      pointHoverRadius: 5,
+      pointHoverRadius: window.outerWidth > 768 ? 5 : 2,
       pointHoverBorderWidth: 0,
-      pointRadius: 5,
+      pointRadius: window.outerWidth > 768 ? 5 : 2,
       fill: true,
-      // fillColor: gradientFill,
       backgroundColor: gradientFill,
-      borderWidth: 2,
+      borderWidth: window.outerWidth > 768 ? 2 : 1,
       data: [260, 175, 245, 350, 470, 520]
     }]
   },
@@ -51961,22 +51957,31 @@ window.chart = new Chart(ctx, {
     },
     layout: {
       padding: {
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0
+        left: window.outerWidth > 768 ? 0 : 6,
+        right: window.outerWidth > 768 ? 0 : 6,
+        top: window.outerWidth > 768 ? 0 : 6,
+        bottom: window.outerWidth > 768 ? 0 : 6
       }
     },
     scales: {
       yAxes: [{
-        ticks: {
+        scaleLabel: {
+          display: window.outerWidth > 768,
+          labelString: 'Dollars',
           fontColor: "rgba(255,255,255,1)",
           fontStyle: "normal",
           fontFamily: "Open Sans",
-          fontSize: fontSize,
+          fontSize: fontSize - 4
+        },
+        ticks: {
+          display: true,
+          fontColor: "rgba(255,255,255,1)",
+          fontStyle: "normal",
+          fontFamily: "Open Sans",
+          fontSize: window.outerWidth > 768 ? fontSize - 4 : 10,
           beginAtZero: true,
           maxTicksLimit: 6,
-          padding: 20,
+          padding: window.outerWidth > 768 ? 10 : 15,
           autoSkip: false,
           min: Math.min.apply(Math, ticks),
           max: Math.max.apply(Math, ticks),
@@ -51986,7 +51991,7 @@ window.chart = new Chart(ctx, {
         },
         gridLines: {
           zeroLineColor: "transparent",
-          color: "rgba(255,255,255,0)",
+          color: window.outerWidth > 768 ? "rgba(255,255,255,0)" : "rgba(255,255,255,.05)",
           drawTicks: false,
           drawBorder: false
         },
@@ -51999,18 +52004,27 @@ window.chart = new Chart(ctx, {
         }
       }],
       xAxes: [{
+        scaleLabel: {
+          display: window.outerWidth > 768,
+          labelString: 'Years',
+          fontColor: "rgba(255,255,255,1)",
+          fontStyle: "normal",
+          fontFamily: "Open Sans",
+          fontSize: fontSize - 4
+        },
         gridLines: {
-          zeroLineColor: "transparent",
+          zeroLineColor: "rgba(255,255,255,.05)",
           color: "rgba(255,255,255,.05)",
           drawTicks: true,
           drawBorder: false
         },
         ticks: {
-          padding: 20,
+          display: true,
+          padding: window.outerWidth > 768 ? 10 : 5,
           fontColor: "rgba(255,255,255,1)",
           fontFamily: "Open Sans",
           fontStyle: "normal",
-          fontSize: fontSize,
+          fontSize: window.outerWidth > 768 ? fontSize - 4 : 10,
           beginAtZero: true,
           callback: function callback(value, index, values) {
             return '' + value;

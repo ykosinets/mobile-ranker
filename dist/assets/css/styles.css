@@ -7510,46 +7510,17 @@ h4, .circle-label, .tile-title {
   height: auto;
   background: transparent;
   position: absolute; }
-  @media (max-width: 767.98px) {
-    .chart {
-      padding: 10px 0 0 10px; } }
   .chart-wrapper {
     position: relative;
-    width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin: 0;
+    width: 100%; }
     .chart-wrapper canvas {
       display: block; }
     .chart-wrapper:before {
       content: '';
       display: block;
       padding-bottom: 50%; }
-    .chart-wrapper .label {
-      position: absolute;
-      left: 50%;
-      top: -18px;
-      margin-left: -5%; }
-      @media (max-width: 767.98px) {
-        .chart-wrapper .label {
-          font-size: 0.8125rem;
-          top: -12px; } }
-      .chart-wrapper .label-x {
-        position: absolute;
-        left: -20px;
-        bottom: 6px; }
-        @media (max-width: 767.98px) {
-          .chart-wrapper .label-x {
-            font-size: 0.8125rem;
-            left: 0;
-            bottom: 4px; } }
-      .chart-wrapper .label-y {
-        position: absolute;
-        left: -20px;
-        top: -18px; }
-        @media (max-width: 767.98px) {
-          .chart-wrapper .label-y {
-            font-size: 0.8125rem;
-            left: 0;
-            top: -12px; } }
 
 .section-about {
   padding: 100px 0 84px;
@@ -7709,7 +7680,14 @@ h4, .circle-label, .tile-title {
       padding: 30px 30px 30px 50px; }
       @media (max-width: 767.98px) {
         .tile-chart .tile-card {
-          padding: 15px; } }
+          padding: 15px 25px 15px 25px; } }
+      .tile-chart .tile-card .chart-wrapper {
+        margin-left: -20px;
+        width: calc(100% + 20px); }
+        @media (max-width: 767.98px) {
+          .tile-chart .tile-card .chart-wrapper {
+            margin-left: 0;
+            width: 100%; } }
     .tile-chart h4, .tile-chart .circle-label, .tile-chart .tile-title {
       width: 100%; }
     .tile-chart p {

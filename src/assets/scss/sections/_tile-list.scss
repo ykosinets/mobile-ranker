@@ -58,7 +58,17 @@
       padding: 30px 30px 30px 50px;
 
       @include media-breakpoint-down(sm) {
-        padding: 15px;
+        padding: 15px 25px 15px 25px;
+      }
+
+      .chart-wrapper{
+        margin-left: -20px;
+        width: calc(100% + 20px);
+
+        @include media-breakpoint-down(sm) {
+          margin-left: 0;
+          width: 100%;
+        }
       }
     }
 

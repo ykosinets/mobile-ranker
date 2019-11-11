@@ -6,13 +6,13 @@
   @extend .fs;
 
   @include media-breakpoint-down(sm){
-    padding: 10px 0 0 10px;
   }
 
   &-wrapper {
     position: relative;
-    width: 100%;
     padding: 0;
+    margin: 0;
+    width: 100%;
 
     canvas {
       display: block;
@@ -22,42 +22,6 @@
       content: '';
       display: block;
       padding-bottom: 50%;
-    }
-
-    .label {
-      position: absolute;
-      left: 50%;
-      top: -18px;
-      margin-left: -5%;
-
-      @include media-breakpoint-down(sm) {
-        @include font-size(13);
-        top: -12px;
-      }
-
-      &-x {
-        position: absolute;
-        left: -20px;
-        bottom: 6px;
-
-        @include media-breakpoint-down(sm) {
-          @include font-size(13);
-          left: 0;
-          bottom: 4px;
-        }
-      }
-
-      &-y {
-        position: absolute;
-        left: -20px;
-        top: -18px;
-
-        @include media-breakpoint-down(sm) {
-          @include font-size(13);
-          left: 0;
-          top: -12px;
-        }
-      }
     }
   }
 }
