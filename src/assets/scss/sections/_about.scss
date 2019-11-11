@@ -24,29 +24,35 @@
     top: -100px;
     width: calc(50vw + #{map-get($container-max-widths, xl) / 2} - 50% + 10px);
     bottom: -100px;
-    left: 47%;
     background: #4f5769;
     opacity: .07;
     border-radius: 0.25rem;
     box-shadow: 0 9px 29px rgba(19, 82, 114, 0.18);
     z-index: -1;
+    left: 41.5%;
 
+
+    @include media-breakpoint-up(xl) {
+      left: 45%;
+    }
     @media screen and (min-width: #{$container-xl - 1}) {
-      width: calc(50vw + #{$container-xl / 2} - 50% + 20px);
+      width: calc(50vw + #{$container-xl / 2} - 41% + 20px);
     }
 
     @include media-breakpoint-down(lg) {
-      width: calc(50vw + #{map-get($container-max-widths, lg) / 2} - 50% + 10px);
+      width: calc(50vw + #{map-get($container-max-widths, lg) / 2} - 45% + 20px);
+      left: 45%;
     }
 
     @include media-breakpoint-down(md) {
-      width: calc(50vw + 360px - 50% + 30px);
+      width: calc(50vw + 360px - 47% + 30px);
+      left: 47.5%;
       top: -50px;
       bottom: 0;
     }
 
     @include media-breakpoint-down(sm) {
-      width: calc(50vw + #{map-get($container-max-widths, sm) / 2} - 50% + 10px);
+      width: calc(50vw + #{map-get($container-max-widths, sm) / 2} - 50% + 20px);
       top: -20px;
       bottom: 0;
     }

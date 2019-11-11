@@ -7545,26 +7545,31 @@ h4, .circle-label, .tile-title {
   top: -100px;
   width: calc(50vw + 570px - 50% + 10px);
   bottom: -100px;
-  left: 47%;
   background: #4f5769;
   opacity: .07;
   border-radius: 0.25rem;
   box-shadow: 0 9px 29px rgba(19, 82, 114, 0.18);
-  z-index: -1; }
+  z-index: -1;
+  left: 41.5%; }
+  @media (min-width: 1200px) {
+    .background-shape:after {
+      left: 45%; } }
   @media screen and (min-width: 1439px) {
     .background-shape:after {
-      width: calc(50vw + 720px - 50% + 20px); } }
+      width: calc(50vw + 720px - 41% + 20px); } }
   @media (max-width: 1199.98px) {
     .background-shape:after {
-      width: calc(50vw + 480px - 50% + 10px); } }
+      width: calc(50vw + 480px - 45% + 20px);
+      left: 45%; } }
   @media (max-width: 991.98px) {
     .background-shape:after {
-      width: calc(50vw + 360px - 50% + 30px);
+      width: calc(50vw + 360px - 47% + 30px);
+      left: 47.5%;
       top: -50px;
       bottom: 0; } }
   @media (max-width: 767.98px) {
     .background-shape:after {
-      width: calc(50vw + 270px - 50% + 10px);
+      width: calc(50vw + 270px - 50% + 20px);
       top: -20px;
       bottom: 0; } }
 
