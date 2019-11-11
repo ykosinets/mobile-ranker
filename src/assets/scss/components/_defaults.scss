@@ -1,4 +1,4 @@
-html{
+html {
   //background: #101667;
 }
 
@@ -15,14 +15,14 @@ body {
   background: #6337c7;
   overscroll-behavior: contain none;
 
-  &.menu-open{
+  &.menu-open {
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     overflow: hidden;
 
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
       padding-right: 0;
     }
 
