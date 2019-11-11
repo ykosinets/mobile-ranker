@@ -32,8 +32,6 @@ import Badge from "./components/notification";
 import Navigation from "./components/navigation";
 import "./components/chart.js";
 
-
-
 window.notification = new Badge('.notification');
 notification.setNumber(document.querySelectorAll(".notification-dropdown .dropdown-menu > *:not(.dropdown-divider):not(.mark-as-read)").length);
 

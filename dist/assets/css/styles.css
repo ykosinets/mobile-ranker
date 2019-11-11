@@ -7558,7 +7558,7 @@ h4, .circle-label, .tile-title {
 
 @media (max-width: 991.98px) {
   .background-shape {
-    margin-bottom: 20px; } }
+    margin-bottom: 30px; } }
 
 .background-shape:after {
   content: '';
@@ -7580,17 +7580,22 @@ h4, .circle-label, .tile-title {
       width: calc(50vw + 480px - 50% + 10px); } }
   @media (max-width: 991.98px) {
     .background-shape:after {
-      width: calc(50vw + 360px - 50% + 10px);
+      width: calc(50vw + 360px - 50% + 30px);
       top: -50px;
-      bottom: -5px; } }
+      bottom: 0; } }
   @media (max-width: 767.98px) {
     .background-shape:after {
       width: calc(50vw + 270px - 50% + 10px);
       top: -20px;
-      bottom: -5px; } }
+      bottom: 0; } }
 
 .presentation-image {
-  pointer-events: none; }
+  pointer-events: none;
+  max-width: 400px;
+  position: relative; }
+  @media (max-width: 991.98px) {
+    .presentation-image {
+      margin: 0 auto; } }
   .presentation-image .device {
     position: relative;
     z-index: 3; }

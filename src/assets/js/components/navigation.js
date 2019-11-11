@@ -18,4 +18,17 @@ export default function Navigation(){
 		menu.classList.toggle('active');
 		body.classList.toggle('menu-open');
 	}
+
+	function hasScrollBar() {
+		const htmlTag = document.querySelector('html');
+
+		if(htmlTag.clientHeight < htmlTag.scrollHeight){
+			body.classList.add('has-scrollbar');
+		}else{
+			body.classList.remove('has-scrollbar');
+		}
+	}
+
+	hasScrollBar();
+	window.addEventListener('resize', hasScrollBar);
 }

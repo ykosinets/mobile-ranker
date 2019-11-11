@@ -15,7 +15,7 @@
 
 .background-shape {
   @include media-breakpoint-down(md) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   &:after {
@@ -40,21 +40,27 @@
     }
 
     @include media-breakpoint-down(md) {
-      width: calc(50vw + #{map-get($container-max-widths, md) / 2} - 50% + 10px);
+      width: calc(50vw + 360px - 50% + 30px);
       top: -50px;
-      bottom: -5px;
+      bottom: 0;
     }
 
     @include media-breakpoint-down(sm) {
       width: calc(50vw + #{map-get($container-max-widths, sm) / 2} - 50% + 10px);
       top: -20px;
-      bottom: -5px;
+      bottom: 0;
     }
   }
 }
 
 .presentation-image {
   pointer-events: none;
+  max-width: 400px;
+  position: relative;
+
+  @include media-breakpoint-down(md){
+    margin: 0 auto;
+  }
 
   .device {
     position: relative;
