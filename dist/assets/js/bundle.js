@@ -52047,6 +52047,7 @@ function Navigation() {
   };
 
   function toggleMenu() {
+    setScrollbarPadding();
     navigationBackdrop.classList.toggle('active');
     headerButton.classList.toggle('active');
     navigationButton.classList.toggle('active');
@@ -52054,18 +52055,22 @@ function Navigation() {
     body.classList.toggle('menu-open');
   }
 
-  function hasScrollBar() {
-    var htmlTag = document.querySelector('html');
+  var setScrollbarPadding = function setScrollbarPadding() {
+    body.style.paddingRight = body.classList.contains('menu-open') && body.style.paddingRight === getScrollbarWidth() ? 0 : getScrollbarWidth();
+  };
 
-    if (htmlTag.clientHeight < htmlTag.scrollHeight) {
-      body.classList.add('has-scrollbar');
-    } else {
-      body.classList.remove('has-scrollbar');
-    }
-  }
-
-  hasScrollBar();
-  window.addEventListener('resize', hasScrollBar);
+  var getScrollbarWidth = function getScrollbarWidth() {
+    var outer = document.createElement('div');
+    outer.style.visibility = 'hidden';
+    outer.style.overflow = 'scroll';
+    outer.style.msOverflowStyle = 'scrollbar';
+    document.body.appendChild(outer);
+    var inner = document.createElement('div');
+    outer.appendChild(inner);
+    var scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+    outer.parentNode.removeChild(outer);
+    return scrollbarWidth + 'px';
+  };
 }
 
 /***/ }),
