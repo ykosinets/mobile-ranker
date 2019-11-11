@@ -7043,6 +7043,7 @@ h4, .circle-label, .tile-title {
         position: absolute;
         top: 0;
         left: 0;
+        opacity: 0;
         will-change: transform, opacity; }
     .notification-link .notification-badge {
       position: absolute;
@@ -7568,7 +7569,6 @@ h4, .circle-label, .tile-title {
       bottom: 0; } }
 
 .presentation-image {
-  pointer-events: none;
   max-width: 400px;
   position: relative; }
   @media (max-width: 991.98px) {
@@ -7576,12 +7576,16 @@ h4, .circle-label, .tile-title {
       margin: 0 auto; } }
   .presentation-image .device {
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    pointer-events: none;
+    user-select: none; }
   .presentation-image .shadow {
     position: absolute;
     left: 50%;
     box-shadow: none !important;
-    transform: translate(-50%, 0); }
+    transform: translate(-50%, 0);
+    pointer-events: none;
+    user-select: none; }
   .presentation-image .screen {
     position: absolute;
     z-index: 2;
@@ -7621,16 +7625,6 @@ h4, .circle-label, .tile-title {
     right: 0;
     position: absolute;
     left: auto; }
-    @media (min-width: 992px) {
-      .presentation-image .iphone {
-        bottom: auto;
-        top: 50px; } }
-    @media (min-width: 1200px) {
-      .presentation-image .iphone {
-        top: 70px; } }
-    @media screen and (min-width: 1599px) {
-      .presentation-image .iphone {
-        top: 100px; } }
     .presentation-image .iphone .shadow {
       bottom: -7px;
       width: 110%; }

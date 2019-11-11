@@ -54,7 +54,6 @@
 }
 
 .presentation-image {
-  pointer-events: none;
   max-width: 400px;
   position: relative;
 
@@ -65,6 +64,8 @@
   .device {
     position: relative;
     z-index: 3;
+    pointer-events: none;
+    user-select: none;
   }
 
   .shadow {
@@ -72,6 +73,8 @@
     left: 50%;
     box-shadow: none !important;
     transform: translate(-50%, 0);
+    pointer-events: none;
+    user-select: none;
   }
 
   .screen {
@@ -131,19 +134,6 @@
     right: 0;
     position: absolute;
     left: auto;
-
-    @include media-breakpoint-up(lg) {
-      bottom: auto;
-      top: 50px;
-    }
-
-    @include media-breakpoint-up(xl) {
-      top: 70px;
-    }
-
-    @media screen and (min-width: 1599px) {
-      top: 100px;
-    }
 
     .shadow {
       //width: 144px; //height: 19px;
