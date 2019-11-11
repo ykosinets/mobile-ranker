@@ -6,13 +6,17 @@ const ctx = document.getElementById('chart').getContext("2d");
 const gradientStroke = ctx.createLinearGradient(0, 0, 0, 500);
 gradientStroke.addColorStop(0, '#fff');
 gradientStroke.addColorStop(1, 'rgba(255,255,255,0)');
-let height = document.querySelector('#chart').getBoundingClientRect().height - 50;
 let min = Math.min( ...ticks );
+let w = window.outerWidth;
+let factor = .69 + ( 0.09/(1280) )* w;
+// console.log(factor);
+let height = document.querySelector('#chart').getBoundingClientRect().height * factor;
+// height = window.outerWidth < 768 ? min :  height;
 
 let fontSize = window.outerWidth * 15 /1600;
-fontSize = fontSize < 10 ? 10 : fontSize;
+fontSize = fontSize < 12 ? 12 : fontSize;
 
-const gradientFill = ctx.createLinearGradient(0, min, 0, height);
+const gradientFill = ctx.createLinearGradient(0, 0, 0, height);
 gradientFill.addColorStop(0, "rgba(255, 255, 255, 0.3)");
 gradientFill.addColorStop(1, "rgba(255, 255, 255, 0)");
 

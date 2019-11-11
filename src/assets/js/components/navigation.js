@@ -3,6 +3,7 @@ export default function Navigation(){
 	const navigationButton = document.querySelector('.navigation-toggle');
 	const menu = document.querySelector('.navigation');
 	const navigationBackdrop = document.querySelector('.navigation-backdrop');
+	const body = document.querySelector('body');
 
 	this.init = function() {
 		headerButton.addEventListener('click', toggleMenu);
@@ -15,5 +16,6 @@ export default function Navigation(){
 		headerButton.classList.toggle('active');
 		navigationButton.classList.toggle('active');
 		menu.classList.toggle('active');
+		body.classList.toggle('menu-open');
 	}
 }

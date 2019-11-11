@@ -1,3 +1,7 @@
+html{
+  //background: #101667;
+}
+
 body {
   letter-spacing: .5px;
   color: $content-text-color;
@@ -6,14 +10,46 @@ body {
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
   font-family: $open-sans;
-  overscroll-behavior: none;
+  background: #6337c7;
+  overscroll-behavior: contain none;
+
+  &.menu-open{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding-right: 17px;
+    overflow: hidden;
+
+    @include media-breakpoint-down(lg){
+      padding-right: 0;
+    }
+  }
+
+  .peek {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40vh;
+    display: none;
+    background: $header-background;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
 }
 
 main {
   flex-grow: 1;
   position: relative;
   z-index: 2;
+  background: $white;
 }
 
 *,
