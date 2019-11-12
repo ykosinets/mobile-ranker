@@ -1,39 +1,59 @@
 .copyright {
   @include font-size(14);
-  font-weight: 600;
-  color: #aea1d9;
   position: relative;
   text-align: center;
-  padding: 12px 15px;
   margin-top: 84px;
   user-select: none;
+  overflow: hidden;
 
-
-  @include media-breakpoint-down(lg){
+  @include media-breakpoint-down(lg) {
     margin-top: 50px;
   }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     margin-top: 30px;
   }
 
-  &:before {
+  &:after {
     content: '';
-    height: 0;
-    border-bottom: 2px solid #a99afc;
     position: absolute;
+    left: 0;
     top: 0;
-    left: 150px;
-    right: 150px;
-
-    @include media-breakpoint-down(md) {
-      left: 100px;
-      right: 100px;
-    }
-
+    height: 100%;
+    width: 100%;
     @include media-breakpoint-down(sm) {
-      left: 0;
-      right: 0;
+      @supports (-webkit-overflow-scrolling: touch) {
+        background: linear-gradient(to top, #6337c7 0%, rgba(#6337c7, 0) 100%);
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    font-weight: 600;
+    color: #aea1d9;
+    padding: 12px 15px;
+    position: relative;
+    opacity: .5;
+
+    &:before {
+      content: '';
+      height: 0;
+      border-bottom: 2px solid #aea1d9;
+      position: absolute;
+      top: 0;
+      left: 150px;
+      right: 150px;
+
+      @include media-breakpoint-down(md) {
+        left: 100px;
+        right: 100px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        left: 0;
+        right: 0;
+      }
     }
   }
 }

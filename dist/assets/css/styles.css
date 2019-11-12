@@ -6390,6 +6390,7 @@ body {
     left: 0;
     top: 0;
     height: 100%;
+    width: 100%;
     overflow: hidden; }
     @media (max-width: 1199.98px) {
       body.menu-open {
@@ -6402,6 +6403,10 @@ body {
       right: 0;
       bottom: 0;
       background: #fff; }
+  body .page-wrapper {
+    background: #fff;
+    position: relative;
+    z-index: 1; }
   body .peek {
     content: '';
     position: fixed;
@@ -6418,9 +6423,7 @@ body {
 
 main {
   flex-grow: 1;
-  position: relative;
-  z-index: 2;
-  background: #fff; }
+  position: relative; }
 
 *,
 *:before,
@@ -7161,35 +7164,51 @@ h4, .circle-label, .tile-title {
 
 .copyright {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: #aea1d9;
   position: relative;
   text-align: center;
-  padding: 12px 15px;
   margin-top: 84px;
-  user-select: none; }
+  user-select: none;
+  overflow: hidden; }
   @media (max-width: 1199.98px) {
     .copyright {
       margin-top: 50px; } }
   @media (max-width: 991.98px) {
     .copyright {
       margin-top: 30px; } }
-  .copyright:before {
+  .copyright:after {
     content: '';
-    height: 0;
-    border-bottom: 2px solid #a99afc;
     position: absolute;
+    left: 0;
     top: 0;
-    left: 150px;
-    right: 150px; }
-    @media (max-width: 991.98px) {
-      .copyright:before {
-        left: 100px;
-        right: 100px; } }
+    height: 100%;
+    width: 100%; }
     @media (max-width: 767.98px) {
-      .copyright:before {
-        left: 0;
-        right: 0; } }
+      @supports (-webkit-overflow-scrolling: touch) {
+        .copyright:after {
+          background: linear-gradient(to top, #6337c7 0%, rgba(99, 55, 199, 0) 100%); } } }
+  .copyright p {
+    margin: 0;
+    font-weight: 600;
+    color: #aea1d9;
+    padding: 12px 15px;
+    position: relative;
+    opacity: .5; }
+    .copyright p:before {
+      content: '';
+      height: 0;
+      border-bottom: 2px solid #aea1d9;
+      position: absolute;
+      top: 0;
+      left: 150px;
+      right: 150px; }
+      @media (max-width: 991.98px) {
+        .copyright p:before {
+          left: 100px;
+          right: 100px; } }
+      @media (max-width: 767.98px) {
+        .copyright p:before {
+          left: 0;
+          right: 0; } }
 
 .footer-row {
   display: flex;
@@ -7237,10 +7256,6 @@ h4, .circle-label, .tile-title {
 .footer {
   background: linear-gradient(45deg, #6337c7, #101667);
   color: #f2f2f2; }
-  @media (max-width: 767.98px) {
-    @supports (-webkit-overflow-scrolling: touch) {
-      .footer {
-        -webkit-mask-image: -webkit-gradient(linear, 0% 95%, 0% 100%, from(black), to(rgba(0, 0, 0, 0))); } } }
   .footer *::selection {
     background: #101667;
     color: #fff; }

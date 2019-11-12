@@ -68,12 +68,6 @@
   background: $gradient-purple-dark;
   color: $footer-text-color;
 
-  @include media-breakpoint-down(sm){
-    @supports (-webkit-overflow-scrolling: touch) {
-      -webkit-mask-image: -webkit-gradient(linear, 0% 95%, 0% 100%, from(black), to(rgba(0, 0, 0, 0)));
-    }
-  }
-
   *::selection {
     background: #101667;
     color: $white;

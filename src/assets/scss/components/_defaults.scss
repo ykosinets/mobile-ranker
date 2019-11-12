@@ -16,6 +16,7 @@ body {
     left: 0;
     top: 0;
     height: 100%;
+    width: 100%;
     overflow: hidden;
 
     @include media-breakpoint-down(lg) {
@@ -31,6 +32,12 @@ body {
       bottom: 0;
       background: $white;
     }
+  }
+
+  .page-wrapper {
+    background: $white;
+    position: relative;
+    z-index: 1;
   }
 
   .peek {
@@ -53,8 +60,6 @@ body {
 main {
   flex-grow: 1;
   position: relative;
-  z-index: 2;
-  background: $white;
 }
 
 *,
